@@ -1,0 +1,80 @@
+    1  sudo apt-get install linux-header s-$(uname -r) build-essential git
+    2  sudo apt-get install linux-headers-$(uname -r) build-essential git
+    3  sudo apt install git build-essential dkms
+    4  sudo apt-get install build-essential
+    5  sudo apt-get update
+    6  sudo apt-get install build-essential
+    7  sudo apt-get update
+    8  sudo apt-get install build-essential checkinstall
+    9  y
+   10  sudo apt install git build-essential dkms
+   11  sudo apt-get install linux-headers-$(uname -r) build-essential git
+   12  git clone https://github.com/lwfinger/rtlwifi_new.git
+   13  cd rtlwifi_new/ && git checkout origin/extended -b extended
+   14  sudo make install
+   15  sudo modprobe -r rtl8723de
+   16  sudo modprobe rtl8723de
+   17  sudo apt purge bcmwl-kernel-source
+   18  sudo sed -i '/blacklist bcma/ d' /etc/modprobe.d/blacklist.conf
+   19  sudo sed -i '/blacklist brcmsmac/ d' /etc/modprobe.d/blacklist.conf
+   20  sudo apt install git build-essential dkms
+   21  git clone -b extended https://github.com/lwfinger/rtlwifi_new.git
+   22  sudo dkms add ./rtlwifi_new
+   23  sudo dkms install rtlwifi-new/0.6
+   24  pwd
+   25  mkdir ~/week1
+   26  cd ~/week1
+   27  pwd
+   28  ls
+   29  cd ..
+   30  ls
+   31  cd week1
+   32  touch ex1.txt
+   33  ls
+   34  ls /usr/bin -r > ex1.txt
+   35  grep --help
+   36  cd ~/week1
+   37  grep gcc | sort -r /usr/bin > ex1.txt
+   38  grep gcc /usr/bin | sort -r >> ex1.txt
+   39  grep "gcc" | sort -r /usr/bin >> ex1.txt
+   40  grep 'gcc' /usr/bin >> ex1.txt
+   41  grep 'gcc' /usr/bin > ex1.txt
+   42  grep 'gcc' /usr/bin
+   43  cd /usr/bin
+   44  pwd
+   45  cd ~
+   46  pwd
+   47  cd ~/week1
+   48  grep gcc /usr/bin
+   49  grep -l 'gcc' /usr/bin
+   50  grep -l gcc
+   51  grep -l gcc >> ex1.txt
+   52  cd ~/week1
+   53  grep "gcc" /usr/bin
+   54  grep gcc /usr/bin
+   55  grep -l gcc /usr/bin
+   56  grep -l  "gcc" /usr/bin
+   57  ls *gcc* /usr/bin > ex1.txt
+   58  ls -c -lt *PRO* /usr/bin > ex1.txt
+   59  ls /usr/bin -r > ex1.txt
+   60  find /usr/bin -maxdepth 1 -name "*gcc*" -print
+   61  find /usr/bin -maxdepth 1 -name "*gcc*" > ex1.txt
+   62  find /usr/bin -maxdepth 1 -name "*gcc*" | tac  > ex1.txt
+   63  find /usr/bin -maxdepth 1 -iname "*gcc*" | tail -r
+   64  find /usr/bin -maxdepth 1 -iname "*gcc*" | tail -r > ex1.txt
+   65  find /usr/bin -maxdepth 1 -name "*gcc*" > ex1.txt
+   66  find /usr/bin -maxdepth 1 -name "*gcc*" | sort  > ex1.txt
+   67  man sort
+   68  find /usr/bin -maxdepth 1 -name "*gcc*" | sort -r  > ex1.txt
+   69  find /usr/bin -maxdepth 1 -name "*gcc*" -ls  | sort -r  > ex1.txt
+   70  find /usr/bin -maxdepth 1 -name "*gcc*" | sort -r  > ex1.txt
+   71  find /usr/bin -maxdepth 1 -name "*gcc*" -printf "%f\n"  | sort -r  > ex1.txt
+   72  man -printf
+   73  man "-printf"
+   74  -printf --help
+   75  find /usr/bin -maxdepth 1 -name "*gcc*" -printf | sort -r  > ex1.txt
+   76  find /usr/bin -maxdepth 1 -name "*gcc*" -printf "%f\n"  | sort -r  > ex1.txt
+   77  find /usr/bin -maxdepth 1 -name "*gcc*" -printf "%f"  | sort -r  > ex1.txt
+   78  find /usr/bin -maxdepth 1 -name "*gcc*" -printf "%f\n"  | sort -r  > ex1.txt
+   79  man find
+   80  history > ex2.txt
