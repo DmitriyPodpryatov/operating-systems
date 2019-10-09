@@ -1,0 +1,10 @@
+Pages are 8 KB.
+
+16-bit virtual address -> last 13 bits specify the byte offset within the page (8 KB = 2^13 bytes);
+                       -> first 3 bits specify the virtual page (16 - 13).
+
+So there are 2^3 = 8 virtual pages in the page table.
+
+So there are 8 entries in the page table.
+
+Answer: 8 entries in the page table.

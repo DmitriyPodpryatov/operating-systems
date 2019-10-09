@@ -1,0 +1,3 @@
+The difference between a physical and a virtual address is that a physical address points to the real memory, 
+and a virtual address may be used to get a physical one with the help of page table. 
+Also, a virtual address can be undefined if if doesn't point to a physical address.
