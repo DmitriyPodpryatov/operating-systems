@@ -1,0 +1,12 @@
+Hit occur when the referenced page is already in the memory, and miss occur otherwise. Thus, Hit ratio = 1 - Miss ratio.
+
+So, the more identical references in the sequence, and the larger the number of page frames would be,
+the more hit ratio, and the lower miss ratio are.
+And vice versa, the wider pull of references in the sequence, and the smaller the number of page frames would be,
+the lower hit ratio, and the more miss ratio are.
+
+So, the sequence of only one page reference (n, n, n, ...) would have hit ratio very close to 1, and miss ratio very close to zero.
+In fact, Hit ratio = (length - 1)/length, and Miss Ratio = 1/length
+
+And the sequence like (a_1, ..., a_n, a_1, ..., a_n, ...) for some positive integer n, where all a_i are distinct, would have hit ratio near zero, and miss ratio close to one.
+Here, Hit ratio = 0, and Miss ration = 1 if the number of page frames is less than n.
