@@ -1,0 +1,12 @@
+~/OS/week01$ ls -i file.txt
+927670
+
+~/OS$ find -inum 927670 >> ex2.txt
+./week10/_ex2.txt
+./week01/file.txt
+
+~/OS$ find -inum 926670 -exec rm {} \;
+
+/*
+~/OS$ find -inum 927670 will not give any output
+*/

@@ -1,0 +1,24 @@
+Before and after removing the execute permission (chmod ugo-x _ex3.txt)
+$ ls -l _ex3.txt
+-rw-r--r--
+
+After adding all permissions to owners and others (chmod uo+rwx _ex3.txt)
+$ ls -l _ex3.txt
+-rwxr--rwx
+
+After equalising group permissions to user permissions (chmod g+rwx _ex3.txt)
+$ ls -l _ex3.txt
+-rwxrwxr-x 1 dpodpryatov dpodpryatov 0 окт 24 17:53 _ex3.txt
+
+$ chmod 660 _ex3.txt
+$ ls -l _ex3.txt
+-rw-rw----
+
+$chmod 775 _ex3.txt
+$ ls -l _ex3.txt
+-rwxrwxr-x
+
+$ chmod 777 _ex3.txt
+$ ls -l _ex3.txt
+-rwxrwxrwx
+

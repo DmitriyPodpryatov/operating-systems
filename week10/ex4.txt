@@ -1,0 +1,12 @@
+inode 1073189
+./tmp/file1
+./tmp/link1
+
+inode 1073189
+./tmp/file1
+./tmp/link1
+
+/*
+first file is file1
+second file is link1
+*/
