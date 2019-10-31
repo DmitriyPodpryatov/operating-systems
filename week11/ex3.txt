@@ -1,0 +1,11 @@
+Program 1 output:
+Hello
+Hello
+
+Program 2 output:
+Hello
+
+
+
+Stdout has line buffering, so the buffer is not flushed until new line character is entered (or the process terminates).
+Fork() creates a child process which inherits the buffer, and thus when child process encounters new line, it prints the buffer out.
