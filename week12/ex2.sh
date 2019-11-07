@@ -1,3 +1,3 @@
 OUTPUT="$(cat /proc/cpuinfo)" 
 
-tee ex2.txt <<< "$OUTPUT"
+./ex2 ex2.txt <<< "$OUTPUT"

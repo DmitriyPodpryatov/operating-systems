@@ -5,7 +5,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 stepping	: 9
 microcode	: 0xb4
-cpu MHz		: 2380.456
+cpu MHz		: 900.006
 cache size	: 3072 KB
 physical id	: 0
 siblings	: 4
@@ -32,7 +32,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 stepping	: 9
 microcode	: 0xb4
-cpu MHz		: 2323.900
+cpu MHz		: 900.023
 cache size	: 3072 KB
 physical id	: 0
 siblings	: 4
@@ -59,7 +59,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 stepping	: 9
 microcode	: 0xb4
-cpu MHz		: 2437.322
+cpu MHz		: 900.042
 cache size	: 3072 KB
 physical id	: 0
 siblings	: 4
@@ -86,7 +86,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 stepping	: 9
 microcode	: 0xb4
-cpu MHz		: 2406.377
+cpu MHz		: 900.015
 cache size	: 3072 KB
 physical id	: 0
 siblings	: 4

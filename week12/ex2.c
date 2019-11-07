@@ -6,7 +6,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define BUFFER_SIZE 1000
+#define BUFFER_SIZE 10000
 
 int main(int argc, char *argv[]) {
 
@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
         else {
             output = fopen(argv[j], "w");
         }
-        fprintf(output, "%s", buffer);
+        fwrite(buffer, sizeof(char), i, output);
         fclose(output);
     }
 
