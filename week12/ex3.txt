@@ -1,0 +1,16 @@
+BUFFER SIZE, b | FILE SIZE, Kb | TIME, s
+1024              0             0.003
+1024              1             0.002    
+64                1             0.002  
+1                 10            0.069
+1                 100           0.311
+128               100           0.013
+1024              100           0.004
+
+The time of the operation depends on the ratio between the buffer size,
+and the file size.
+
+Low ration means long operation time, and big ratio means fast operation time.
+
+This is so because if ratio is close to 0, the program makes more syscalls (read and write),
+thus taking more time.
